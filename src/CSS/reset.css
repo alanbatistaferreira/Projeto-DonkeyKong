@@ -1,0 +1,14 @@
+/* Ajuste */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Retirar bolinhas kkkk */
+ul{
+  list-style: none;  
+}
+/* Não quero decoração de texto no links */
+a{
+    text-decoration: none;
+}

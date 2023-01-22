@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Icone da barra do site-->
+    <link rel="shortcut icon" href="./src/Imagens/IconDK.png" type="image/x-icon">
+
+    <!--Fonte do site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+
+    <!--Link com CSS-->
+    <link rel="stylesheet" href="./src/CSS/reset.css">
+    <link rel="stylesheet" href="./src/CSS/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <!--Titulo do Site-->
+    <title>Donkey Kong - O Filme</title>
+
+
+</head>
+
+<body>
+<!--Video de Fundo-->
+    <div class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/Dkvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="cabecalho">
+
+<!--Logo Donkey Kong-->
+        <a>
+            <img class="logo" src="./src/Imagens/DK-logo.png" alt="logo donkey kong">
+        </a>
+<!--Menu-->
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Container-->
+    <main class="container">
+
+        <div class="informacoes">
+        <img class="imagem-titulo" src="./src/Imagens/titulo.png" alt="imagem do titulo do filme">
+
+        <!-- Descrição da pagina -->
+        <p class="descricao">Donkey Kong é um personagem dos videogames criado em 1981, por Shigeru Miyamoto. O macaco
+            mais famoso da Nintendo foi idealizado juntamente com outro fenômeno dos videogames, Mario. No primeiro jogo
+            da série, o encanador de bigodes, que até então se chamava Jumpman, tinha que salvar a princesa do terrível
+            Donkey Kong</p>
+
+            <!--Botão do Trailer-->
+        <button class="botao-trailer">Veja o trailer</button>
+        </div>
+        
+        <!--Imagem meio da tela-->
+        <img class="donkeykong" src="./src/Imagens/dk-char.png">
+        
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/RcR8ioI0BcY" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!--Chamar o JavaScript-->
+    <script src="/src/js/index.js">
+
+        
+    </script>
+
+</body>
+</html>

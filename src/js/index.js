@@ -1,0 +1,22 @@
+console.log('mostrar o  document', document);
+console.log(document.querySelector(".botao-trailer"));
+
+const botaotrailer = document.querySelector(".botao-trailer");
+const botaofecharmodal = document.querySelector(".fechar-modal");
+const video = document.getElementById("video");
+const modal = document.querySelector(".modal");
+const linkdovideo = video.src;
+
+function alternarmodal(){
+    modal.classList.toggle("aberto");
+
+}
+botaotrailer.addEventListener("click", ()=>{
+    alternarmodal();
+    video.setAttribute("src", linkdovideo);
+});
+botaofecharmodal.addEventListener("click",() =>{
+    alternarmodal();
+    video.setAttribute("src", "");
+});
+
