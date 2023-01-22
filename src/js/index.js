@@ -1,6 +1,3 @@
-console.log('mostrar o  document', document);
-console.log(document.querySelector(".botao-trailer"));
-
 const botaotrailer = document.querySelector(".botao-trailer");
 const botaofecharmodal = document.querySelector(".fechar-modal");
 const video = document.getElementById("video");
