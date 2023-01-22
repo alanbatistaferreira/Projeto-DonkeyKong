@@ -1,19 +1,18 @@
-const botaoTrailer = document.querySelector(".botao-trailer");
-const botaoFecharModal = document.querySelector(".fechar-modal");
+const botaotrailer = document.querySelector(".botao-trailer");
+const botaofecharmodal = document.querySelector(".fechar-modal");
 const video = document.getElementById("video");
 const modal = document.querySelector(".modal");
-const linkDoVideo = video.src;
+const linkdovideo = video.src;
 
-function alternarModal(){
-	modal.classList.toggle("aberto");
+function alternarmodal(){
+    modal.classList.toggle("aberto");
+
 }
-
-botaoTrailer.addEventListener("click", () => {
-	alternarModal();
-	video.setAttribute("src", linkDoVideo);
+botaotrailer.addEventListener("click", ()=>{
+    alternarmodal();
+    video.setAttribute("src", linkdovideo);
 });
-
-botaoFecharModal.addEventListener("click", () => {
-	alternarModal();
-	video.setAttribute("src", "");
+botaofecharmodal.addEventListener("click",() =>{
+    alternarmodal();
+    video.setAttribute("src", "");
 });
